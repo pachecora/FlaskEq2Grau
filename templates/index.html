@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>CalcEquação2Grau</title>
+</head>
+<body>
+<form action="/" method="post">
+    {{ form.csrf_token }}
+    {{ form.a.label }} {{ form.a(size=15)}}
+    {{ form.b.label }} {{ form.b(size=15)}}
+    {{ form.c.label }} {{ form.c(size=15)}}
+    {{ form.enviar }}
+</form>
+<h2>Resultado:</h2>
+<h1>Equaçao -> {{ a }}x² + {{ b }}x + {{ c }}</h1>
+<p>Raiz 1 é {{ raiz1 }}</p>
+<p>Raiz 2 é {{ raiz2 }}</p>
+</body>
+</html>

@@ -1,4 +1,4 @@
-def equacao2grau(a:0, b:0, c:0) -> 'list':
+def equacao2grau(a, b, c) -> 'list':
 
     """Recebe 3 inteiros a, b e c e de uma equaçao do 2grau
     e calcula suas raízes"""
