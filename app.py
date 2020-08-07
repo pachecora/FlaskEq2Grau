@@ -15,6 +15,7 @@ def index():
         session['c'] = form.c.data
         return redirect(url_for('index'))
 
+
     raizes = equacao2grau(session.get('a'), session.get('b'), session.get('c'))
     return render_template('index.html',
                            form=form,
